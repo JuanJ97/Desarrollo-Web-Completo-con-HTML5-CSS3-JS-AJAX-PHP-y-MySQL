@@ -681,6 +681,57 @@ div.newsletter .contenido h3{
     font-size: 7vw;
     font-family: 'PT Sans', sans-serif;
 }
+div.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+@media only screen and (min-width:768px){
+    div.cuenta-regresiva ul li{
+        width: 25%;
+        float: left;
+    }
+}
+footer{
+    background-color: #353535;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+footer .contenedor > div{
+    color: #ffffff;
+    padding: 0 20px;
+    font-size: 14px;
+    
+}
+@media only screen and (min-width:768px){
+    footer .contenedor > div{
+        width: 33.3%;
+        float: left;
+    }
+}
+footer h3{
+    color: #ffffff;
+    text-transform:uppercase;
+    font-family: 'Oswald',sans-serif;
+    margin-bottom: 20px;
+}
+footer h3 span{
+    color:#fe4918;
+}
+footer .ultimos-tweets li{
+    margin-bottom: 15px;
+}
+footer nav.redes-sociales{
+    text-align: left;
+}
+p.copyright{
+    background-color: #2e2e2e;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+}
     /* ==========================================================================
    Helper classes
    ========================================================================== */
