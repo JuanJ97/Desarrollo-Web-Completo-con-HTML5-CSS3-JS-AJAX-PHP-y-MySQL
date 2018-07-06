@@ -206,15 +206,15 @@
                              <div class="extras">
                                  <div class="orden">
                                      <label for="camisa_evento">Camisa del evento $10 <small>(Promocion 7% dto.)</small></label>
-                                     <input type="number">
+                                     <input type="number" max="20" min="0" name="camisa_evento" id="camisa_evento">
                                  </div>
                                  <div class="orden">
-                                     <label for="entiquetas">Paquete de 10 entiquetas<small>(HTML5, CSS3, JS, ANGULAR, REACTJS, JAVA)</small></label><br>
-                                     <input type="number">
+                                     <label for="etiquetas">Paquete de 10 etiquetas<small>(HTML5, CSS3, JS, ANGULAR, REACTJS, JAVA)</small></label><br>
+                                     <input type="number" name="etiquetas" id="etiquetas" max="20" min="0" >
                                  </div>
                                  <div class="orden">
-                                     <label for="regalo">Camisa del evento $10 <small>(Promocion 7% dto.)</small></label>
-                                    <select name="" id="registro" required>
+                                     <label for="regalo">Selecciona un regalo</label>
+                                    <select name="regalo" id="regalo" required>
                                         <option value="">-- Selecciona un regalo --</option>
                                         <option value="ETI">Entiquetas</option>
                                         <option value="PUL">Pulseras</option>
@@ -225,11 +225,11 @@
                              </div>
                              <div class="total">
                                  <p>Resumen:</p>
-                                 <div class="lista-productos">
+                                 <div id="lista_productos">
                                      
                                  </div>
                                  <p>Total:</p>
-                                 <div class="suma-total">
+                                 <div id="suma_total">
                                      
                                  </div>
                                  <input type="submit" id="btnRegistro" class="button" value="Pagar">

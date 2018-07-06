@@ -775,6 +775,7 @@ div.paquetes .tabla-precio input{
 }
 .contenido-dia{
     padding: 20px;
+    display: none;
 }
 @media only screen and (min-width:768px){
     .contenido-dia > div{
@@ -821,6 +822,16 @@ div.resumen div.total{
 div.resumen input{
     display: block;
     margin: 10px auto;
+}
+#lista_productos{
+    background-color: #e1e1e1;
+    padding: 20px;
+    display: none;
+}
+#suma_total{
+    text-align: center;
+    font-size: 2em;
+    color: #fe4918;
 }
     /* ==========================================================================
    Helper classes
