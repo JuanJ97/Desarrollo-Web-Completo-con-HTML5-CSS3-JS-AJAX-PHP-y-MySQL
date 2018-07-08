@@ -19,27 +19,38 @@
         pase_dia.addEventListener('blur', mostrar_dias);
         pase_dos_dias.addEventListener('blur', mostrar_dias);
         pase_todos_dias.addEventListener('blur', mostrar_dias);
+      
         nombre.addEventListener('blur', function(){
            if(this.value == ''){
                errorDIV.style.display = 'block';
                errorDIV.innerHTML = "El campo nombre es necesario";
                nombre.style.border = '1px solid red';
-           } 
+           } else{
+               errorDIV.style.display = 'none';
+               this.style.border = '1px solid #cccccc';
+           }
         });
         apellido.addEventListener('blur', function(){
            if(this.value == ''){
                errorDIV.style.display = 'block';
                errorDIV.innerHTML = "El campo apellido es necesario";
                apellido.style.border = '1px solid red';
-           } 
+           }  else{
+               errorDIV.style.display = 'none';
+               this.style.border = '1px solid #cccccc';
+           }
         });
         email.addEventListener('blur', function(){
            if(this.value == ''){
                errorDIV.style.display = 'block';
                errorDIV.innerHTML = "El campo email es necesario";
                email.style.border = '1px solid red';
-           } 
+           }  else{
+               errorDIV.style.display = 'none';
+               this.style.border = '1px solid #cccccc';
+           }
         });
+      
         function calcularMontos(event){
             event.preventDefault();
             if(regalo.value === ''){
