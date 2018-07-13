@@ -135,5 +135,29 @@ $(function() {
     
     });
     $('.nombre-sitio').lettering();
+    var windowHeight = $(window).height();
+    var barraAltura = $('.barra').innerHeight();
+    $(window).scroll(function(){
+       var scroll = $(window).scrollTop();
+        if(scroll > windowHeight){
+            $('.barra').addClass('fixed');
+            $('body').css({'margin-top': barraAltura+'px'});
+        }else{
+            $('.barra').removeClass('fixed');
+            $('body').css({'margin-top':'0px'});
+        }
+    });
+    $('.menu-movil').on('click', function(){
+       $('.navegacion-principal').slideToggle(); 
+    });
+    // Reaccionar a Resize en la pantalla
+ var breakpoint = 768;
+ $(window).resize(function() {
+ if($(document).width() >= breakpoint){
+ $('.navegacion-principal').show();
+ } else {
+ $('.navegacion-principal').hide();
+ }
+ });
 });
 
