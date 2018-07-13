@@ -850,6 +850,11 @@ div.resumen input{
     font-size: 2em;
     color: #fe4918;
 }
+
+h1.nombre-sitio span{
+    position: relative;
+    text-shadow: 0 0 30px black;
+}
     /* ==========================================================================
    Helper classes
    ========================================================================== */
