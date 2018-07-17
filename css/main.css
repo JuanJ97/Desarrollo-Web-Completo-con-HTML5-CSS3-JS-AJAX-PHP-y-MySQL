@@ -884,6 +884,47 @@ div.galeria img{
     left: 0;
     z-index: 2;
 }
+div.calendario h3 {
+  background-color: #fe4918;
+  clear: both;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+div.calendario::after {
+  clear: both;
+  display: block;
+  content: '';    
+}
+div.dia {
+  width: 50%;
+  float: left;
+  border: 2px solid #e1e1e1;  
+  transition: all .3s ease; 
+}
+@media only screen and (min-width:768px) {
+  div.dia {
+    width: 33.3%;
+    min-height: 240px;
+    padding-top: 20px;
+  }
+}
+div.dia:hover {
+  background-color: #e1e1e1;
+  -webkit-transform: scale(1.1);
+}
+div.dia p.titulo {
+  color: #fe4918;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+div.dia p {
+  font-size: 1em;
+}
+div.dia i {
+  color: #fe4918;
+  font-size: 1.6em;
+}
     /* ==========================================================================
    Helper classes
    ========================================================================== */
