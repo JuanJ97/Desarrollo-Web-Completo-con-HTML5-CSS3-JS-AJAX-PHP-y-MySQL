@@ -159,5 +159,7 @@ $(function() {
  $('.navegacion-principal').hide();
  }
  });
+    
+    $('.invitado-info').colorbox({inline:true, width:"50%"});
 });
 
