@@ -16,6 +16,11 @@
          <div class="contenedor">
              <div class="programa-evento">
                  <h2>Programa del Evento</h2>
+                 <?php
+                 try{
+                     require_once('php/conexion.php');
+                 }
+                 ?>
                  <nav class="menu-programa">
                      <a href="#talleres"><i class="fa fa-code" aria-hidden="true"></i>Talleres</a>
                      <a href="#conferencias"><i class="fa fa-comment" aria-hidden="true"></i>Conferencias</a>

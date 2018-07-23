@@ -10,7 +10,7 @@
  ?>
  
  <section class="invitados contenedor seccion">
-                     <h2>Nuestros jugadores</h2>
+                     <h2>Nuestros invitados</h2>
                      <ul class="lista-invitados clearfix">
                        
                          <?php while($invitados = $resultado->fetch_assoc() ){ ?>
