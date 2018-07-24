@@ -14,11 +14,13 @@
         var resultado = document.getElementById('lista_productos');
         var sum = document.getElementById('suma_total');
         var camisas = document.getElementById('camisa_evento');
-        var etiquetas = document.getElementById('etiquetas')
+        var etiquetas = document.getElementById('etiquetas');
+        btnRegistro.disabled = true;
         calcular.addEventListener('click', calcularMontos);
         pase_dia.addEventListener('blur', mostrar_dias);
         pase_dos_dias.addEventListener('blur', mostrar_dias);
         pase_todos_dias.addEventListener('blur', mostrar_dias);
+        
       
         nombre.addEventListener('blur', function(){
            if(this.value == ''){
@@ -81,6 +83,8 @@
                    resultado.innerHTML += lista_pro[i] + '<br>';
                 }
                 sum.innerHTML ="$ "+ totala_pagar.toFixed(2);
+                btnRegistro.disabled = false;
+                document.getElementById('total_pedido').value = total_pagar;
             }
         }
         function mostrar_dias(){
