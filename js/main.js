@@ -84,7 +84,8 @@
                 }
                 sum.innerHTML ="$ "+ totala_pagar.toFixed(2);
                 btnRegistro.disabled = false;
-                document.getElementById('total_pedido').value = total_pagar;
+                document.getElementById('total_pedido').value = totala_pagar;
+                
             }
         }
         function mostrar_dias(){
